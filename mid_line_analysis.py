@@ -21,7 +21,7 @@ def measure_scale(vid_file):
         flags |= cv2.CALIB_CB_ADAPTIVE_THRESH
         flags |= cv2.CALIB_CB_FAST_CHECK
         flags |= cv2.CALIB_CB_NORMALIZE_IMAGE
-        ret, corners = cv2.findChessboardCorners(gray, (9,7), flags)
+        ret, corners = cv2.findChessboardCorners(gray, constants.CHESSBOARD_NCORNERS, flags)
         if ret == True:
             dist = math.hypot(corners[1][0, 0] - corners[0][0, 0], corners[1][0, 1] - corners[0][0, 1])
             scale += constants.REAL_SQAURE_LEN / dist
