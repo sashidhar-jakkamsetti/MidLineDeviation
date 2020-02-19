@@ -2,3 +2,6 @@
 .vscode/
 .ipynb_checkpoints/
 __pycache__/
+videos/.DS_Store
+images/.DS_Store
+photos/.DS_Store

@@ -43,8 +43,8 @@ def get_measurements(landmarks, facebox, scale, out_file):
     ver5 = (facebox[0] + facebox[2] - landmarks[45][0, 0])*scale
     hor1 = (int((landmarks[19][0, 1] + landmarks[24][0, 1])/2) - facebox[1])*scale
     hor2 = (landmarks[33][0, 1] - int((landmarks[19][0, 1] + landmarks[24][0, 1])/2))*scale
-    hor3 = (int((landmarks[50][0, 1] + landmarks[52][0, 1])/2) - landmarks[33][0, 1])*scale
-    hor4 = (facebox[1] + facebox[3] - int((landmarks[50][0, 1] + landmarks[52][0, 1])/2))*scale
+    hor3 = (int((landmarks[48][0, 1] + landmarks[54][0, 1])/2) - landmarks[33][0, 1])*scale
+    hor4 = (landmarks[8][0, 1] - int((landmarks[48][0, 1] + landmarks[54][0, 1])/2))*scale
     print_str = "vertical segments: {} \t {} \t {} \t {} \t {}\nhorizontal segments: {} \t {} \t {} \t {}"\
                     .format(ver1, ver2, ver3, ver4, ver5, hor1, hor2, hor3, hor4)
     out_file.write(print_str + "\n")
