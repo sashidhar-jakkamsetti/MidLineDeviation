@@ -1,3 +1,9 @@
 *.h5 filter=lfs diff=lfs merge=lfs -text
 *.pb filter=lfs diff=lfs merge=lfs -text
 .zip filter=lfs diff=lfs merge=lfs -text
+.h5.zip filter=lfs diff=lfs merge=lfs -text
+.h5 filter=lfs diff=lfs merge=lfs -text
+.caffemodel filter=lfs diff=lfs merge=lfs -text
+VGGFace2_DeepFace_weights_val-0.9034.h5.zip filter=lfs diff=lfs merge=lfs -text
+facenet_weights.h5 filter=lfs diff=lfs merge=lfs -text
+sphereface_model.caffemodel filter=lfs diff=lfs merge=lfs -text
