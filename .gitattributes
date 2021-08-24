@@ -9,3 +9,4 @@ facenet_weights.h5 filter=lfs diff=lfs merge=lfs -text
 sphereface_model.caffemodel filter=lfs diff=lfs merge=lfs -text
 ms1mv2_r50.onnx filter=lfs diff=lfs merge=lfs -text
 model-r100-ii.zip filter=lfs diff=lfs merge=lfs -text
+webface_r50.onnx filter=lfs diff=lfs merge=lfs -text
